@@ -1,0 +1,5 @@
+glfw-3.2.1
+clip-1.0
+catch-2.3.0
+imgui-1.62
+fmt-5.0.0
