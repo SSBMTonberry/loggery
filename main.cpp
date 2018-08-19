@@ -3,6 +3,7 @@
 // (GLFW is a cross-platform general purpose library for handling windows, inputs, OpenGL/Vulkan graphics context creation, etc.)
 // (GL3W is a helper library to access OpenGL functions since there is no standard header to access modern OpenGL functions easily. Alternatives are GLEW, Glad, etc.)
 
+#define CUTE_PNG_IMPLEMENTATION
 #include <imgui/imgui.h>
 #include <imgui/imgui_impl_glfw.h>
 #include <imgui/imgui_impl_opengl3.h>
@@ -15,30 +16,34 @@
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
 
+#include "content/files_mapper.h"
+
+#include "src/classes/Image.h"
+
 bool m_quit = false;
-static void glfw_error_callback(int error, const char* description)
+/*static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
-}
+}*/
 
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+/*void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         m_quit = true;
-}
+}*/
 
 int main(int argc, char **argv, char** envp)
 {
     // Setup window
-    glfwSetErrorCallback(glfw_error_callback);
+    //glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
         return 1;
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-#if __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-#endif
+    #if __APPLE__
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    #endif
 
     //This one forces full screen
 
@@ -48,10 +53,10 @@ int main(int argc, char **argv, char** envp)
     //glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
     //glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
     //glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-    //
     //GLFWwindow *window = glfwCreateWindow(mode->width, mode->height, "ImGui GLFW+OpenGL3 example", monitor, NULL);
 
     GLFWwindow* window = glfwCreateWindow(1280, 720, "ImGui GLFW+OpenGL3 example", NULL, NULL);
+
     //GLFWwindow* window = glfwCreateWindow(2560, 1440, "ImGui GLFW+OpenGL3 example", NULL, NULL);
 
     glfwMakeContextCurrent(window);
@@ -65,6 +70,8 @@ int main(int argc, char **argv, char** envp)
     }
     printf("OpenGL %d.%d\n", GLVersion.major, GLVersion.minor);
 
+
+
     // Setup Dear ImGui binding
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
@@ -74,8 +81,6 @@ int main(int argc, char **argv, char** envp)
 
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init();
-
-    glfwSetKeyCallback(window, key_callback);
 
     // Setup style
     ImGui::StyleColorsDark();
@@ -100,6 +105,33 @@ int main(int argc, char **argv, char** envp)
     bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
+
+
+    /*cp_image_t img = cp_load_png_mem((void *)files_mapper::test::_MARIO_PNG, (int) files_mapper::test::_MARIO_PNG_SIZE);
+
+    if(!img.pix)
+        return 1;
+
+    GLuint textureID;
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST); //GL_NEAREST);//GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); //GL_NEAREST);//GL_LINEAR);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, img.w, img.h, 0, GL_RGBA, GL_UNSIGNED_BYTE, img.pix);*/
+
+    ly::Image image {(void *)files_mapper::test::_MARIO_PNG, (int)files_mapper::test::_MARIO_PNG_SIZE};
+
+
+    //glGenerateMipmap(GL_TEXTURE_2D);
+
+    //ImVec2 uv0 = ImVec2(0 / (float)img.w, 0 / (float)img.h);
+    //ImVec2 uv1 = ImVec2((0 + img.w) / (float)img.w, (img.h + img.h) / (float)img.h);
+
+    //glfwSetKeyCallback(window, key_callback);
+
     // Main loop
     while (!glfwWindowShouldClose(window) && !m_quit)
     {
@@ -109,6 +141,10 @@ int main(int argc, char **argv, char** envp)
         // - When io.WantCaptureKeyboard is true, do not dispatch keyboard input data to your main application.
         // Generally you may always pass all inputs to dear imgui, and hide them from your application based on those two flags.
         glfwPollEvents();
+
+        if(ImGui::IsKeyPressed(GLFW_KEY_ESCAPE))
+            m_quit = true;
+
 
         // Start the ImGui frame
         ImGui_ImplOpenGL3_NewFrame();
@@ -131,6 +167,9 @@ int main(int argc, char **argv, char** envp)
                 counter++;
             ImGui::SameLine();
             ImGui::Text("counter = %d", counter);
+
+
+            ImGui::Image((void*)image.getTextureID(), {64, 64}, {0,0}, {1.f, 1.f}); //, uv0, uv1);
 
             ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
         }
@@ -155,14 +194,14 @@ int main(int argc, char **argv, char** envp)
         // Rendering
         ImGui::Render();
         int display_w, display_h;
-        glfwMakeContextCurrent(window);
+        //glfwMakeContextCurrent(window);
         glfwGetFramebufferSize(window, &display_w, &display_h);
         glViewport(0, 0, display_w, display_h);
         glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
-        glfwMakeContextCurrent(window);
+        //glfwMakeContextCurrent(window);
         glfwSwapBuffers(window);
     }
 
