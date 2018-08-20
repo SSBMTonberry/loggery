@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.12)
 project(loggery)
 
+set(VERSION_MAJOR 0)
+set(VERSION_MINOR 1)
+set(VERSION_PATCH 0)
+
 set(CMAKE_CXX_STANDARD 17)
 
 include_directories(${PROJECT_SOURCE_DIR}/external_libs/include/)
@@ -23,9 +27,47 @@ set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/gl
 
 add_executable(loggery ${SOURCE_FILES} ${FMT_SOURCE_FILES} ${IMGUI_SOURCE_FILES} ${GLAD_SOURCE_FILES})
 
-set(MY_STATIC_LIBS ${PROJECT_SOURCE_DIR}/external_libs/lib/linux/libglfw3.a ${PROJECT_SOURCE_DIR}/external_libs/lib/linux/libclip.a)
+set(LINUX 0)
+set(WINDOWS 0)
+set(APPLE 0)
+set(MSVC 0)
+set(MINGW 0)
+if(UNIX AND NOT APPLE)
+    set(LINUX 1)
+elseif(APPLE)
+    set(APPLE 1)
+elseif(WIN32)
+    set(WINDOWS 1)
+    if(MSVC)
+        set(MSVC 1)
+    elseif(MINGW)
+        set(MINGW 1)
+    endif()
+endif()
 
-#set(GLFW_DEPENDENCIES -lrt -lXrandr -lXinerama -lXi -lXcursor -lGL -lm -ldl -lXrender -ldrm -lXdamage -lX11-xcb -lxcb-glx -lxcb-dri2 -lxcb-dri3 -lxcb-present -lxcb-sync -lxshmfence -lXxf86vm -lXfixes -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp)
-set(GLFW_DEPENDENCIES -lrt -lXrandr -lXinerama -lXi -lXcursor -lGL -ldl -lXxf86vm -lX11 -lpthread)
-#target_link_libraries(loggery stdc++fs GL X11 Xrandr dl pthread ${MY_STATIC_LIBS})
-target_link_libraries(loggery stdc++fs  ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
+configure_file (
+        "${PROJECT_SOURCE_DIR}/LoggeryConfig.h.in"
+        "${PROJECT_SOURCE_DIR}/LoggeryConfig.h"
+)
+
+
+if(LINUX)
+    set(MY_STATIC_LIBS ${PROJECT_SOURCE_DIR}/external_libs/lib/linux/libglfw3.a ${PROJECT_SOURCE_DIR}/external_libs/lib/linux/libclip.a)
+    #set(GLFW_DEPENDENCIES -lrt -lXrandr -lXinerama -lXi -lXcursor -lGL -lm -ldl -lXrender -ldrm -lXdamage -lX11-xcb -lxcb-glx -lxcb-dri2 -lxcb-dri3 -lxcb-present -lxcb-sync -lxshmfence -lXxf86vm -lXfixes -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp)
+    set(GLFW_DEPENDENCIES -lrt -lXrandr -lXinerama -lXi -lXcursor -lGL -ldl -lXxf86vm -lX11 -lpthread)
+    target_link_libraries(loggery stdc++fs ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
+elseif(WINDOWS)
+    message("Using WINDOWS")
+    if(MSVC)
+        message("Compiler: MSVC")
+        if(DEBUG)
+            message("MSVC-DEBUG")
+        else()
+            message("MSVC-RELEASE")
+        endif()
+    elseif(MINGW)
+        message("Compiler: MinGW")
+    else()
+        message("Compiler: UNKNOWN")
+    endif()
+endif()
