@@ -12,7 +12,7 @@ ly::Window::~Window()
 
 int ly::Window::initialize()
 {
-
+    return 0;
 }
 
 bool ly::Window::create()

@@ -61,7 +61,7 @@ namespace ImGui
 
 // Add this to your imconfig.h
 
-#include <SFML/System/Vector2.hpp>
+/*#include <SFML/System/Vector2.hpp>
 #include <SFML/Graphics/Color.hpp>
 
 #define IM_VEC2_CLASS_EXTRA                                             \
@@ -87,4 +87,4 @@ namespace ImGui
             static_cast<sf::Uint8>(z * 255.f),                          \
             static_cast<sf::Uint8>(w * 255.f));                         \
     }
-
+*/
