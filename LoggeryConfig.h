@@ -2,14 +2,15 @@
 #define VERSION_MINOR 1
 #define VERSION_PATCH 0
 #define LINUX 0
-#define WINDOWS 1
-#define APPLE 0
+#define WINDOWS 0
+#define APPLE 1
 #define MSVC 0
-#define MINGW 1
-#define CMAKE_MAKE_PROGRAM C:/PROGRA~1/MINGW-~1/X86_64~1.0-R/mingw64/bin/mingw32-make.exe
-#define CMAKE_SYSTEM_NAME Windows
-#define CMAKE_HOST_SYSTEM_NAME Windows //Windows, Linux or Darwin (OS X)
-#define CMAKE_HOST_SYSTEM_PROCESSOR AMD64
-#define CMAKE_CXX_COMPILER C:/Program Files/mingw-w64/x86_64-7.1.0-release-posix-seh-rt_v5-rev0/mingw64/bin/g++.exe
-#define CMAKE_CXX_COMPILER_ID GNU
-#define CMAKE_CXX_COMPILER_VERSION 7.1.0
+#define MINGW 0
+#define CMAKE_BUILD_TYPE MinSizeRel
+#define CMAKE_MAKE_PROGRAM /usr/bin/make
+#define CMAKE_SYSTEM_NAME Darwin
+#define CMAKE_HOST_SYSTEM_NAME Darwin //Windows, Linux or Darwin (OS X)
+#define CMAKE_HOST_SYSTEM_PROCESSOR x86_64
+#define CMAKE_CXX_COMPILER /usr/local/opt/llvm/bin/clang++
+#define CMAKE_CXX_COMPILER_ID Clang
+#define CMAKE_CXX_COMPILER_VERSION 6.0.1
