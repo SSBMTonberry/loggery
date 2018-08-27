@@ -4,21 +4,24 @@
 // (GL3W is a helper library to access OpenGL functions since there is no standard header to access modern OpenGL functions easily. Alternatives are GLEW, Glad, etc.)
 
 #define CUTE_PNG_IMPLEMENTATION
-#include <imgui/imgui.h>
-#include <imgui/imgui_impl_glfw.h>
-#include <imgui/imgui_impl_opengl3.h>
+//#include <imgui/imgui.h>
+//#include <imgui/imgui_impl_glfw.h>
+//#include <imgui/imgui_impl_opengl3.h>
 
 #include <stdio.h>
 
 //#include <GL/gl3w.h>    // This example is using gl3w to access OpenGL functions. You may freely use any other OpenGL loader such as: glew, glad, glLoadGen, etc.
 //#include <glew.h>
 
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
+//#include "glad/glad.h"
+//#include "GLFW/glfw3.h"
 
 #include "content/files_mapper.h"
 
 #include "src/classes/Image.h"
+#include "src/classes/Window.h"
+
+#include "src/managers/ProgramManager.h"
 
 bool m_quit = false;
 /*static void glfw_error_callback(int error, const char* description)
@@ -32,6 +35,21 @@ bool m_quit = false;
         m_quit = true;
 }*/
 
+#if 1
+int main(int argc, char **argv, char** envp)
+{
+    ly::ProgramManager program;
+    
+    if(program.initialize({1280, 720}, "Hello, james!") == 0)
+    {
+        program.run();
+        return 0;
+    }
+    return 1;
+}
+#endif
+
+#if 0
 int main(int argc, char **argv, char** envp)
 {
     // Setup window
@@ -60,7 +78,7 @@ int main(int argc, char **argv, char** envp)
     //GLFWwindow* window = glfwCreateWindow(2560, 1440, "ImGui GLFW+OpenGL3 example", NULL, NULL);
 
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // Enable vsync with 1
+    //glfwSwapInterval(1); // Enable vsync with 1
     //glfwInit();
     //gl3wInit();
 
@@ -216,3 +234,4 @@ int main(int argc, char **argv, char** envp)
     return 0;
 }
 
+#endif

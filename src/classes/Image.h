@@ -5,9 +5,9 @@
 #ifndef LOGGERY_IMAGE_H
 #define LOGGERY_IMAGE_H
 
-#include <glad/glad.h>
+#include "glad/glad.h"
 #include "cute_png.h"
-#include <imgui/imgui.h>
+#include "imgui/imgui.h"
 #include <string>
 #include "Vector.hpp"
 

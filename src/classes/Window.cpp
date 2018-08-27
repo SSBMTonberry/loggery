@@ -6,19 +6,12 @@
 
 ly::Window::~Window()
 {
-
-
+    destroyWindow();
 }
 
 int ly::Window::initialize()
 {
     return 0;
-}
-
-bool ly::Window::create()
-{
-    destroyWindow();
-    return false;
 }
 
 /*!
@@ -33,6 +26,20 @@ bool ly::Window::destroyWindow()
         return true;
     }
     return false;
+}
+
+bool ly::Window::create(const ly::Vector2i &size, const std::string &title)
+{
+    destroyWindow();
+    m_size = size;
+    m_title = title;
+    m_window = glfwCreateWindow(m_size.x, m_size.y, m_title.c_str(), NULL, NULL);
+    return m_window != nullptr;
+}
+
+GLFWwindow *ly::Window::get()
+{
+    return m_window;
 }
 
 

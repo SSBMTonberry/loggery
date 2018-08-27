@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(${PROJECT_SOURCE_DIR}/external_libs/include/)
 
 #set(FMT_SOURCE_FILES fmt/core.h fmt/format.cc fmt/format.h fmt/format-inl.h fmt/ostream.h fmt/posix.cc fmt/posix.h fmt/printf.h fmt/ranges.h fmt/time.h)
-set(SOURCE_FILES main.cpp content/files.h content/files_mapper.h)
+set(SOURCE_FILES main.cpp content/files.h content/files_mapper.h src/classes/Image.cpp src/classes/Image.h src/classes/Vector.hpp src/classes/Color.hpp src/classes/Window.cpp src/classes/Window.h src/managers/ProgramManager.cpp src/managers/ProgramManager.h)
 
 set(FMT_SOURCE_FILES external_libs/include/fmt/core.h external_libs/include/fmt/format.cc
     external_libs/include/fmt/format.h external_libs/include/fmt/format-inl.h external_libs/include/fmt/ostream.h
@@ -23,7 +23,7 @@ set(IMGUI_SOURCE_FILES external_libs/include/imgui/imgui_impl_glfw.cpp
 
 #set(GLFW_SOURCE_FILES external_libs/include/GLFW/glfw3.h external_libs/include/GLFW/glfw3native.h)
 
-set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/glad/glad.h external_libs/include/glad/khrplatform.h external_libs/include/cute_png.h src/classes/Image.cpp src/classes/Image.h src/classes/Vector.hpp src/classes/Color.hpp src/classes/Window.cpp src/classes/Window.h src/managers/ProgramManager.cpp src/managers/ProgramManager.h)
+set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/glad/glad.h external_libs/include/glad/khrplatform.h external_libs/include/cute_png.h)
 
 add_executable(loggery ${SOURCE_FILES} ${FMT_SOURCE_FILES} ${IMGUI_SOURCE_FILES} ${GLAD_SOURCE_FILES})
 
