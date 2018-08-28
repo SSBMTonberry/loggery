@@ -39,7 +39,7 @@ bool m_quit = false;
 int main(int argc, char **argv, char** envp)
 {
     ly::ProgramManager program;
-    
+
     if(program.initialize({1280, 720}, "Hello, james!") == 0)
     {
         program.run();

@@ -23,7 +23,7 @@ set(IMGUI_SOURCE_FILES external_libs/include/imgui/imgui_impl_glfw.cpp
 
 #set(GLFW_SOURCE_FILES external_libs/include/GLFW/glfw3.h external_libs/include/GLFW/glfw3native.h)
 
-set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/glad/glad.h external_libs/include/glad/khrplatform.h external_libs/include/cute_png.h)
+set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/glad/glad.h external_libs/include/glad/khrplatform.h external_libs/include/cute_png.h src/classes/Timer.cpp src/classes/Timer.h)
 
 add_executable(loggery ${SOURCE_FILES} ${FMT_SOURCE_FILES} ${IMGUI_SOURCE_FILES} ${GLAD_SOURCE_FILES})
 
@@ -123,3 +123,5 @@ elseif(WINDOWS)
         message(WARNING "Compiler: UNKNOWN")
     endif()
 endif()
+
+add_subdirectory(tests)
