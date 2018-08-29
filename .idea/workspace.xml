@@ -38,16 +38,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a58bd91-2dba-4abd-9cb2-50d444c26e1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/robin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Timer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Timer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_misc.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Textbox.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Textbox.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managers/ProgramManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/ProgramManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managers/ProgramManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/ProgramManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_misc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_misc.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -76,43 +71,43 @@
           <entry key="Build All (disassembly)" value="6" />
           <entry key="LICENSE" value="1" />
           <entry key="c" value="3" />
-          <entry key="cpp" value="21" />
+          <entry key="cpp" value="22" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="24" />
+          <entry key="h" value="25" />
           <entry key="hpp" value="3" />
           <entry key="loggery (disassembly)" value="4" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="3" />
+          <entry key="CMakeLists.txt" value="4" />
           <entry key="Disassembly" value="10" />
-          <entry key="ObjectiveC" value="51" />
+          <entry key="ObjectiveC" value="53" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4634" />
-          <entry key="h" value="1635" />
+          <entry key="cpp" value="5064" />
+          <entry key="h" value="1942" />
           <entry key="hpp" value="248" />
           <entry key="md" value="95" />
-          <entry key="mm" value="13" />
-          <entry key="txt" value="319" />
+          <entry key="mm" value="23" />
+          <entry key="txt" value="324" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="319" />
-          <entry key="Doxygen file" value="15" />
+          <entry key="CMakeLists.txt" value="324" />
+          <entry key="Doxygen file" value="17" />
           <entry key="Markdown" value="95" />
-          <entry key="ObjectiveC" value="6515" />
+          <entry key="ObjectiveC" value="7260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
         <counts>
-          <entry key="Catch Test" value="26" />
+          <entry key="Catch Test" value="35" />
         </counts>
       </usages-collector>
     </session>
@@ -221,13 +216,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="120" selection-start-line="14" selection-start-column="120" selection-end-line="14" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_misc.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="546">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#66#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/Textbox.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Textbox.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding>
+                <element signature="e#93#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,36 +292,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/Timer.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/Timer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="55" />
-              <folding>
-                <element signature="e#95#111#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -363,7 +362,6 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/src/classes/FpsTimer.cpp" />
         <option value="$PROJECT_DIR$/src/classes/FpsTimer.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/tests/main_test.cpp" />
         <option value="$PROJECT_DIR$/tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/classes/Timer.h" />
@@ -371,6 +369,9 @@
         <option value="$PROJECT_DIR$/src/managers/ProgramManager.h" />
         <option value="$PROJECT_DIR$/src/managers/ProgramManager.cpp" />
         <option value="$PROJECT_DIR$/tests/test_misc.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/gui/Textbox.h" />
+        <option value="$PROJECT_DIR$/src/gui/Textbox.cpp" />
       </list>
     </option>
   </component>
@@ -415,7 +416,7 @@
               <item name="loggery" type="b2602c69:ProjectViewProjectNode" />
               <item name="loggery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="loggery" type="b2602c69:ProjectViewProjectNode" />
@@ -465,7 +466,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Simple timer - test 1 fps" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="loggery" TARGET_NAME="test_loggery" RUN_TARGET_PROJECT_NAME="loggery" RUN_TARGET_NAME="test_loggery" TEST_CLASS="[timer]" TEST_METHOD="Simple timer - test 1 fps" TEST_MODE="SUITE_TEST">
+    <configuration name="Simple timer - test 1 fps" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="loggery" TARGET_NAME="test_loggery" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="loggery" RUN_TARGET_NAME="test_loggery" TEST_CLASS="[timer]" TEST_METHOD="Simple timer - test 1 fps" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -524,51 +525,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 47m 54s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 48m 43s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 49m 15s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 50m 15s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 50m 46s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_test_1_fps - 2018.08.28 at 21h 52m 39s.xml">
-      <configuration name="Simple timer - test 1 fps" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.28 at 22h 30m 26s.xml">
-      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.28 at 22h 30m 38s.xml">
-      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.28 at 22h 30m 43s.xml">
-      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.28 at 22h 31m 35s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 16h 57m 37s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 16h 58m 10s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 16h 58m 58s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 16h 59m 44s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 17h 00m 33s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 17h 00m 56s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 17h 03m 05s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 17h 07m 00s.xml">
+      <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Simple_timer_-_Time_to_read_log-file - 2018.08.29 at 17h 07m 05s.xml">
       <configuration name="Simple timer - Time to read log-file" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64472000" />
+    <option name="totallyTimeSpent" value="68153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1415" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14041369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14041369" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299373" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299373" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39968652" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968652" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -577,7 +578,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991317" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.3275862" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -600,36 +601,12 @@
           <line>86</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test_misc.cpp</url>
-          <line>45</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test_misc.cpp</url>
-          <line>37</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test_misc.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test_misc.cpp</url>
-          <line>39</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test_misc.cpp</url>
-          <line>41</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeCatchTestRunConfigurationType">
         <watch expression="duration.count()" language="ObjectiveC" />
+        <watch expression="table.size()" language="ObjectiveC" />
       </configuration>
       <configuration name="CMakeRunConfiguration">
         <watch expression="*monitor" language="ObjectiveC" />
@@ -640,6 +617,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>table.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>duration.count()</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -833,13 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -916,11 +891,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_misc.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="546">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#66#86#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="120" selection-start-line="14" selection-start-column="120" selection-end-line="14" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Textbox.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#93#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Textbox.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
         </state>
       </provider>
     </entry>
