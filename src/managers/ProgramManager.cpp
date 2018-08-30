@@ -4,6 +4,7 @@
 
 #include "ProgramManager.h"
 
+
 static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -102,7 +103,8 @@ void ly::ProgramManager::run()
     ly::Timer timer;
     GLFWmonitor *monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode *mode = glfwGetVideoMode(monitor);
-
+    LogForm testLog;
+    testLog.loadFile("../test_logs/test.log");
     while (!glfwWindowShouldClose(m_currentWindow->get()) && !m_quit)
     {
 
@@ -126,7 +128,7 @@ void ly::ProgramManager::run()
 
             // 1. Show a simple window.
             // Tip: if we don't call ImGui::Begin()/ImGui::End() the widgets automatically appears in a window called "Debug".
-            {
+            /*{
                 static float f = 0.0f;
                 static int counter = 0;
                 ImGui::Text(
@@ -149,17 +151,17 @@ void ly::ProgramManager::run()
 
                 ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate,
                             ImGui::GetIO().Framerate);
-            }
+            }*/
 
             // 2. Show another simple window. In most cases you will use an explicit Begin/End pair to name your windows.
-            if (show_another_window)
+            /*if (show_another_window)
             {
                 ImGui::Begin("Another Window", &show_another_window);
                 ImGui::Text("Hello from another window!");
                 if (ImGui::Button("Close Me"))
                     show_another_window = false;
                 ImGui::End();
-            }
+            }*/
 
             // 3. Show the ImGui demo window. Most of the sample code is in ImGui::ShowDemoWindow(). Read its code to learn more about Dear ImGui!
             if (show_demo_window)
@@ -168,6 +170,8 @@ void ly::ProgramManager::run()
                                         ImGuiCond_FirstUseEver); // Normally user code doesn't need/want to call this because positions are saved in .ini file anyway. Here we just want to make the demo initial state a bit more friendly!
                 ImGui::ShowDemoWindow(&show_demo_window);
             }
+
+            testLog.process();
 
             // Rendering
             ImGui::Render();
@@ -193,4 +197,5 @@ int ly::ProgramManager::initializeGLAD()
     }
 
     printf("OpenGL %d.%d\n", GLVersion.major, GLVersion.minor);
+    return 0;
 }

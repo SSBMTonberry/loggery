@@ -18,6 +18,8 @@
 #include "../classes/Image.h"
 #include "../classes/Timer.h"
 #include "../../content/files_mapper.h"
+#include "../forms/LogForm.h"
+
 namespace ly
 {
     class ProgramManager

@@ -32,5 +32,7 @@ namespace ly
         float a;
     };
 
+
+
 }
 #endif //LOGGERY_COLOR_HPP

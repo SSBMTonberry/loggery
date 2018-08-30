@@ -29,7 +29,7 @@ void ly::Textbox::setId(const std::string &id)
     m_id = id;
 }
 
-const std::string &ly::Textbox::getValue() const
+const std::string_view ly::Textbox::getValue() const
 {
     return m_value;
 }
@@ -75,14 +75,23 @@ bool ly::Textbox::process()
     if(!m_isVisible)
         return false;
 
-    char buf[m_size];
-    strncpy(buf, m_value.c_str(), sizeof(buf));
     bool isChanged = false;
+    if(m_size > 0)
+    {
+        char buf[m_size];
+        strncpy(buf, m_value.c_str(), sizeof(buf));
 
-    if (ImGui::InputText(m_id.c_str(), buf, m_size, m_flags))
-        isChanged = true;
+        if (ImGui::InputText(m_id.c_str(), buf, m_size, m_flags))
+            isChanged = true;
 
-    m_value = buf;
+        m_value = buf;
+    }
+    else //Unlimited length using string (New in ImGui 1.63)
+    {
+        if(ImGui::InputText(m_id.c_str(), &m_value))
+            isChanged = true;
+    }
+
 
     return isChanged;
 }

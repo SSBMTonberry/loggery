@@ -6,7 +6,7 @@
 #define APPLE 0
 #define MSVC 0
 #define MINGW 0
-#define CMAKE_BUILD_TYPE MinSizeRel
+#define CMAKE_BUILD_TYPE RelWithDebInfo
 #define CMAKE_MAKE_PROGRAM /usr/bin/make
 #define CMAKE_SYSTEM_NAME Linux
 #define CMAKE_HOST_SYSTEM_NAME Linux //Windows, Linux or Darwin (OS X)

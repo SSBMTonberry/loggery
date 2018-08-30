@@ -52,5 +52,4 @@ TEST_CASE("Simple timer - Time to read log-file", "[timer]" )
         //table.emplace_back(std::istream_iterator<std::string>(iss));
     }
     std::cout << "Time elapsed " << timer.getTotalDuration().count() << " seconds.";
-    int dummy;
 }

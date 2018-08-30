@@ -7,12 +7,12 @@ set(VERSION_PATCH 0)
 
 set(CMAKE_CXX_STANDARD 17)
 
+
+
 include_directories(${PROJECT_SOURCE_DIR}/external_libs/include/)
 
 #set(FMT_SOURCE_FILES fmt/core.h fmt/format.cc fmt/format.h fmt/format-inl.h fmt/ostream.h fmt/posix.cc fmt/posix.h fmt/printf.h fmt/ranges.h fmt/time.h)
-set(SOURCE_FILES main.cpp content/files.h content/files_mapper.h src/classes/Image.cpp src/classes/Image.h src/classes/Vector.hpp
-        src/classes/Color.hpp src/classes/Window.cpp src/classes/Window.h src/managers/ProgramManager.cpp src/managers/ProgramManager.h
-        src/gui/Textbox.cpp src/gui/Textbox.h external_libs/include/cute_png.h src/classes/Timer.cpp src/classes/Timer.h)
+
 
 set(FMT_SOURCE_FILES external_libs/include/fmt/core.h external_libs/include/fmt/format.cc
     external_libs/include/fmt/format.h external_libs/include/fmt/format-inl.h external_libs/include/fmt/ostream.h
@@ -21,11 +21,18 @@ set(FMT_SOURCE_FILES external_libs/include/fmt/core.h external_libs/include/fmt/
 
 set(IMGUI_SOURCE_FILES external_libs/include/imgui/imgui_impl_glfw.cpp
     external_libs/include/imgui/imgui_impl_opengl3.cpp
-    external_libs/include/imgui/imgui.cpp external_libs/include/imgui/imgui_draw.cpp external_libs/include/imgui/imgui_demo.cpp)
+    external_libs/include/imgui/imgui.cpp external_libs/include/imgui/imgui_draw.cpp external_libs/include/imgui/imgui_demo.cpp
+    external_libs/include/imgui/misc/stl/imgui_stl.cpp)
 
 #set(GLFW_SOURCE_FILES external_libs/include/GLFW/glfw3.h external_libs/include/GLFW/glfw3native.h)
 
 set(GLAD_SOURCE_FILES external_libs/include/glad/glad.c external_libs/include/glad/glad.h external_libs/include/glad/khrplatform.h )
+
+set(SOURCE_FILES main.cpp content/files.h content/files_mapper.h src/classes/Image.cpp src/classes/Image.h src/classes/Vector.hpp
+        src/classes/Color.hpp src/classes/Window.cpp src/classes/Window.h src/managers/ProgramManager.cpp src/managers/ProgramManager.h
+        src/gui/Textbox.cpp src/gui/Textbox.h external_libs/include/cute_png.h src/classes/Timer.cpp src/classes/Timer.h src/gui/Text.cpp
+        src/gui/Text.h src/managers/LogManager.cpp src/managers/LogManager.h src/forms/LogForm.cpp src/forms/LogForm.h src/forms/SystemLog.cpp
+        src/forms/SystemLog.h)
 
 add_executable(loggery ${SOURCE_FILES} ${FMT_SOURCE_FILES} ${IMGUI_SOURCE_FILES} ${GLAD_SOURCE_FILES})
 
@@ -85,13 +92,12 @@ elseif(APPLE)
         message(WARN "CLANG-DEBUG")
         set(MY_STATIC_LIBS ${PROJECT_SOURCE_DIR}/external_libs/lib/osx/debug/libglfw3.a ${PROJECT_SOURCE_DIR}/external_libs/lib/osx/debug/libclip.a)
         set(GLFW_DEPENDENCIES /System/Library/Frameworks/Cocoa.framework /System/Library/Frameworks/OpenGL.framework /System/Library/Frameworks/IOKit.framework /System/Library/Frameworks/CoreVideo.framework)#-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo)
-        target_link_libraries(loggery ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
-
+        target_link_libraries(loggery /usr/local/opt/llvm/lib/libc++experimental.a ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
     else()
         message("CLANG-RELEASE")
         set(MY_STATIC_LIBS ${PROJECT_SOURCE_DIR}/external_libs/lib/osx/release/libglfw3.a ${PROJECT_SOURCE_DIR}/external_libs/lib/osx/release/libclip.a)
         set(GLFW_DEPENDENCIES /System/Library/Frameworks/Cocoa.framework /System/Library/Frameworks/OpenGL.framework /System/Library/Frameworks/IOKit.framework /System/Library/Frameworks/CoreVideo.framework)#-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo)
-        target_link_libraries(loggery ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
+        target_link_libraries(loggery /usr/local/opt/llvm/lib/libc++experimental.a ${MY_STATIC_LIBS} ${GLFW_DEPENDENCIES})
     endif()
 elseif(WINDOWS)
     message(WARNING "Using WINDOWS")
