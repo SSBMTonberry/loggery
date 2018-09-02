@@ -9,6 +9,11 @@ ly::Text::Text(const std::string &value, bool hasColor) : m_value{value}, m_hasC
 
 }
 
+ly::Text::Text(const std::string &value, const ImVec4 &color, bool hasColor) : m_value{value}, m_color{color}, m_hasColor {hasColor}
+{
+
+}
+
 bool ly::Text::process()
 {
 
@@ -47,3 +52,5 @@ void ly::Text::setColor(const ImVec4 &color)
 {
     m_color = color;
 }
+
+

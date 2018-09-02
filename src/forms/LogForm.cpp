@@ -4,7 +4,12 @@
 
 #include "LogForm.h"
 
-ly::LogForm::LogForm()
+ly::LogForm::LogForm() : m_id {"Testlog###undefined_id"}
+{
+
+}
+
+ly::LogForm::LogForm(const std::string &id, const ImVec2 &sizeOnFirstUse) : m_id {id}, m_sizeOnFirstUse {sizeOnFirstUse}
 {
 
 }
@@ -13,7 +18,7 @@ bool ly::LogForm::process()
 {
     if(m_isVisible)
     {
-        ImGui::Begin("Testlog", &m_isVisible);
+        ImGui::Begin(m_id.c_str(), &m_isVisible, m_sizeOnFirstUse);
         ImGui::BeginChild("debug_child_1", {-1, 60}, true, 0);
         if (m_filter.process())
         {
@@ -91,3 +96,5 @@ void ly::LogForm::setVisible(bool isVisible)
 {
     m_isVisible = isVisible;
 }
+
+

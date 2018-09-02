@@ -19,6 +19,7 @@
 #include "../classes/Timer.h"
 #include "../../content/files_mapper.h"
 #include "../forms/LogForm.h"
+#include "../forms/SystemLog.h"
 
 namespace ly
 {

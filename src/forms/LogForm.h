@@ -43,6 +43,7 @@ namespace ly
     {
         public:
             LogForm();
+            LogForm(const std::string &id, const ImVec2 &sizeOnFirstUse = {640, 480});
 
             bool process();
             bool loadFile(const fs::path &path);
@@ -53,6 +54,8 @@ namespace ly
             bool isVisible() const;
 
         private:
+            std::string m_id;
+            ImVec2 m_sizeOnFirstUse;
             bool m_isVisible = true;
             Textbox m_filter = {"filter"};
             std::vector<ly::Text> m_filteredTexts;

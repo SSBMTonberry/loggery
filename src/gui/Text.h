@@ -17,6 +17,7 @@ namespace ly
         public:
             Text() = default;
             Text(const std::string &value, bool hasColor = false);
+            Text(const std::string &value, const ImVec4 &color, bool hasColor = true);
 
             bool process();
 
