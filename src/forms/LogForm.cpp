@@ -97,4 +97,14 @@ void ly::LogForm::setVisible(bool isVisible)
     m_isVisible = isVisible;
 }
 
+void ly::LogForm::setSizeOnFirstUse(const ImVec2 &sizeOnFirstUse)
+{
+    m_sizeOnFirstUse = sizeOnFirstUse;
+}
+
+const ImVec2 &ly::LogForm::getSizeOnFirstUse() const
+{
+    return m_sizeOnFirstUse;
+}
+
 

@@ -103,10 +103,11 @@ void ly::ProgramManager::run()
     ly::Timer timer;
     GLFWmonitor *monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode *mode = glfwGetVideoMode(monitor);
+
+    SystemLog::get()->addSuccess("OK!");
+    SystemLog::get()->addError("OH NO!");
+
     LogForm testLog {"Testlog###test_id2"};
-    SystemLog systemLog;
-    systemLog.addSuccess("OK!");
-    systemLog.addError("OH NO!");
     testLog.loadFile("../test_logs/test.log");
     while (!glfwWindowShouldClose(m_currentWindow->get()) && !m_quit)
     {
@@ -175,7 +176,7 @@ void ly::ProgramManager::run()
             }
 
             testLog.process();
-            systemLog.process();
+            SystemLog::get()->process();
             // Rendering
             ImGui::Render();
             int display_w, display_h;

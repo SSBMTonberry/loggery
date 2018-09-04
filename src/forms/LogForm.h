@@ -12,6 +12,7 @@
 #include "../gui/Textbox.h"
 #include "../gui/Text.h"
 #include "fmt/format.h"
+#include "SystemLog.h"
 
 #if MSVC
     #include <filesystem>
@@ -50,8 +51,10 @@ namespace ly
             std::vector<ly::Text> getFilteredTexts(const std::string_view &filter);
 
             void setVisible(bool isVisisble);
+            void setSizeOnFirstUse(const ImVec2 &sizeOnFirstUse);
 
             bool isVisible() const;
+            const ImVec2 &getSizeOnFirstUse() const;
 
         private:
             std::string m_id;
@@ -61,6 +64,7 @@ namespace ly
             std::vector<ly::Text> m_filteredTexts;
             std::vector<ly::Text> m_texts;
 
+            SystemLog *m_log;
     };
 }
 

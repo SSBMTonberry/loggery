@@ -13,12 +13,16 @@
 #include "../gui/Text.h"
 #include "../gui/Textbox.h"
 
+
 namespace ly
 {
     class SystemLog
     {
         public:
-            SystemLog() = default;
+            static SystemLog *get() {
+                static SystemLog log;
+                return &log;
+            }
 
             bool process();
 
@@ -48,6 +52,9 @@ namespace ly
 
             std::vector<ly::Text> m_filteredTexts;
             std::vector<ly::Text> m_texts;
+
+        private:
+            explicit SystemLog(const ImVec2 &sizeOnFirstUse = {640, 480});
     };
 }
 

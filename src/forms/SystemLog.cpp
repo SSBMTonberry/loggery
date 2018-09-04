@@ -4,6 +4,11 @@
 
 #include "SystemLog.h"
 
+ly::SystemLog::SystemLog(const ImVec2 &sizeOnFirstUse) : m_sizeOnFirstUse {sizeOnFirstUse}
+{
+
+}
+
 void ly::SystemLog::add(const std::string &text, const ImVec4 &color)
 {
     m_texts.emplace(m_texts.begin(), text, color);
