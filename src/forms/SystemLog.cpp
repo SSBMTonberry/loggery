@@ -29,7 +29,7 @@ void ly::SystemLog::addInfo(const std::string &text, bool useTimestamp)
 void ly::SystemLog::addWarning(const std::string &text, bool useTimestamp)
 {
     std::string msg = (useTimestamp) ? fmt::format("[ERROR]   ({0}) - {1}", getTimestamp(), text) : fmt::format("[ERROR] {1}", text);
-    add(msg, ErrorColor);
+    add(msg, WarningColor);
 }
 
 void ly::SystemLog::addError(const std::string &text, bool useTimestamp)

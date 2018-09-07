@@ -152,89 +152,166 @@
 [2017-04-25 22:35] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Downloading mirrors from repo.manjaro.org
 [2017-04-25 22:35] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Using default mirror file
 [2017-04-25 22:35] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Querying mirrors - This may take some time
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://mirror.ventraip.net.au/Manjaro/   [1;32m1.047[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.uberglobalmirror.com/   [1;32m1.320[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.mirror.serversaustralia.com.au/   [1;32m1.179[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Austria        : http://mirror.inode.at/manjaro/   [1;32m0.276[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belarus        : http://mirror.datacenter.by/pub/mirrors/manjaro/   [1;32m0.412[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belgium        : http://ftp.belnet.be/manjaro/   [1;32m0.183[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belgium        : https://manjaro.cu.be/   [1;32m0.219[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Brasil         : http://linorg.usp.br/manjaro/   [1;32m0.897[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://mirrors.netix.net/manjaro/   [1;32m0.408[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.ipacct.com/manjaro/   [1;32m0.413[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.telecoms.bg/   [1;32m0.405[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://mirror.ventraip.net.au/Manjaro/
+   [1;32m1.047[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.uberglobalmirror.com/
+   [1;32m1.320[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.mirror.serversaustralia.com.au/
+   [1;32m1.179[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Austria        : http://mirror.inode.at/manjaro/
+   [1;32m0.276[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belarus        : http://mirror.datacenter.by/pub/mirrors/manjaro/
+   [1;32m0.412[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belgium        : http://ftp.belnet.be/manjaro/
+   [1;32m0.183[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Belgium        : https://manjaro.cu.be/
+   [1;32m0.219[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Brasil         : http://linorg.usp.br/manjaro/
+   [1;32m0.897[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://mirrors.netix.net/manjaro/
+   [1;32m0.408[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.ipacct.com/manjaro/
+   [1;32m0.413[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.telecoms.bg/
+   [1;32m0.405[1;m 
 [2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Canada         : http://manjaro.cybr.ca/
 [2017-04-25 22:35] [ALPM-SCRIPTLET] .: [1;31mError[1;m [Errno 111] Connection refused 'http://manjaro.cybr.ca/'
 [2017-04-25 22:35] [ALPM-SCRIPTLET] 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Canada         : https://ca.mirror.babylon.network/manjaro/   [1;32m1.471[1;m 
-[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Chile          : http://manjaro.dcc.uchile.cl/   [1;32m1.037[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Canada         : https://ca.mirror.babylon.network/manjaro/
+   [1;32m1.471[1;m 
+[2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Chile          : http://manjaro.dcc.uchile.cl/
+   [1;32m1.037[1;m 
 [2017-04-25 22:35] [ALPM-SCRIPTLET]    ..... Chile          : http://doge.ing.puc.cl/Mirrors/Manjaro/
 [2017-04-25 22:35] [ALPM-SCRIPTLET] .: [1;31mError[1;m timed out 'http://doge.ing.puc.cl/Mirrors/Manjaro/'
 [2017-04-25 22:35] [ALPM-SCRIPTLET] 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.ustc.edu.cn/manjaro/   [1;32m1.885[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://ftp.cuhk.edu.hk/pub/Linux/manjaro/   [1;32m0.608[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.tuna.tsinghua.edu.cn/manjaro/   [1;32m2.369[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : https://mirrors.zju.edu.cn/manjaro/   [1;32m1.903[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Colombia       : http://mirror.edatel.net.co/manjaro/   [1;32m0.785[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Costa_Rica     : http://mirrors.ucr.ac.cr/manjaro/   [1;32m0.523[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Czech          : https://mirror.dkm.cz/manjaro/   [1;32m0.526[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Denmark        : https://mirrors.dotsrc.org/manjaro/   [1;32m0.139[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Denmark        : https://www.uex.dk/repos/manjaro/   [1;32m0.377[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.cedia.org.ec/manjaro/   [1;32m0.967[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.uta.edu.ec/manjaro/   [1;32m1.288[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.espoch.edu.ec/manjaro/   [1;32m1.260[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://manjarolinux.polymorf.fr/   [1;32m0.182[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://mirror.lignux.com/manjaro/   [1;32m0.268[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://ftp.free.org/mirrors/repo.manjaro.org/repos/   [1;32m0.409[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : https://fr.mirror.babylon.network/manjaro/   [1;32m0.602[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://mirror.ragenetwork.de/manjaro/   [1;32m0.464[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://ftp.halifax.rwth-aachen.de/manjaro/   [1;32m0.957[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.tu-chemnitz.de/pub/linux/manjaro/   [1;32m0.166[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netzspielplatz.de/manjaro/packages/   [1;32m0.438[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netcologne.de/manjaro/   [1;32m0.257[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.rhindon.net/manjaro/   [1;32m0.487[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.stdout.net/manjaro/   [1;32m0.441[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://manjaro-mirror-a.alpix.eu/   [1;32m0.572[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/   [1;32m0.224[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Greece         : http://ftp.cc.uoc.gr/mirrors/linux/manjaro/   [1;32m0.263[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Hungary        : http://mirror.infotronik.hu/mirrors/pub/manjaro/   [1;32m0.218[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kambing.ui.ac.id/manjaro/   [1;32m1.806[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kartolo.sby.datautama.net.id/manjaro/   [1;32m1.703[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://jaran.undip.ac.id/manjaro/   [1;32m1.625[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ireland        : https://ftp.heanet.ie/mirrors/manjaro/   [1;32m0.282[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://manjaro.mirror.garr.it/mirrors/manjaro/   [1;32m0.207[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://ba.mirror.garr.it/mirrors/manjaro/   [1;32m0.123[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://ct.mirror.garr.it/mirrors/manjaro/   [1;32m0.173[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/   [1;32m1.260[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.riken.jp/Linux/manjaro/   [1;32m1.333[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : https://ftp.nluug.nl/pub/os/Linux/distr/manjaro/   [1;32m0.206[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.snt.utwente.nl/pub/linux/manjaro/   [1;32m0.098[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : https://nl.mirror.babylon.network/manjaro/   [1;32m0.269[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Philippines    : http://mirror.rise.ph/manjaro/   [1;32m0.766[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Poland         : http://mirror.chmuri.net/manjaro/   [1;32m0.470[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Portugal       : http://ftp.dei.uc.pt/pub/linux/manjaro/   [1;32m0.807[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Portugal       : http://manjaro.barata.pt/   [1;32m0.472[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Romania        : http://mirrors.serverhost.ro/manjaro/packages/   [1;32m0.684[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Romania        : http://ftp.lug.ro/manjaro/   [1;32m0.359[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Russia         : https://mirror.yandex.ru/mirrors/manjaro/   [1;32m0.238[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Singapore      : http://download.nus.edu.sg/mirror/manjaro/   [1;32m1.347[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... South_Africa   : http://mirror.is.co.za/mirrors/manjaro.org/   [1;32m0.470[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Sweden         : https://ftp.lysator.liu.se/pub/manjaro/   [1;32m0.152[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Spain          : http://ftp.caliu.cat/manjaro/   [1;32m0.430[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Sweden         : http://mirror.zetup.net/manjaro/   [1;32m0.066[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Taiwan         : http://free.nchc.org.tw/manjaro/   [1;32m1.249[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Turkey         : http://ftp.linux.org.tr/manjaro/   [1;32m1.124[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://repo.manjaro.org.uk/   [1;32m0.545[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : https://www.mirrorservice.org/sites/repo.manjaro.org/r   [1;32m0.187[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://mirror.catn.com/pub/manjaro/   [1;32m0.357[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://manjaro.mirrors.uk2.net/   [1;32m0.333[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.dacentec.com/manjaro/   [1;32m0.283[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.jmu.edu/manjaro/   [1;32m0.452[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.solarvps.com/manjaro/   [1;32m0.702[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.nexcess.net/manjaro/   [1;32m0.517[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://distro.ibiblio.org/manjaro/   [1;32m1.214[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.clarkson.edu/manjaro/   [1;32m0.556[1;m 
-[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirrors.ocf.berkeley.edu/manjaro/   [1;32m1.171[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.ustc.edu.cn/manjaro/
+   [1;32m1.885[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://ftp.cuhk.edu.hk/pub/Linux/manjaro/
+   [1;32m0.608[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.tuna.tsinghua.edu.cn/manjaro/
+   [1;32m2.369[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... China          : https://mirrors.zju.edu.cn/manjaro/
+   [1;32m1.903[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Colombia       : http://mirror.edatel.net.co/manjaro/
+   [1;32m0.785[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Costa_Rica     : http://mirrors.ucr.ac.cr/manjaro/
+   [1;32m0.523[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Czech          : https://mirror.dkm.cz/manjaro/
+   [1;32m0.526[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Denmark        : https://mirrors.dotsrc.org/manjaro/
+   [1;32m0.139[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Denmark        : https://www.uex.dk/repos/manjaro/
+   [1;32m0.377[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.cedia.org.ec/manjaro/
+   [1;32m0.967[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.uta.edu.ec/manjaro/
+   [1;32m1.288[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.espoch.edu.ec/manjaro/
+   [1;32m1.260[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://manjarolinux.polymorf.fr/
+   [1;32m0.182[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://mirror.lignux.com/manjaro/
+   [1;32m0.268[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : http://ftp.free.org/mirrors/repo.manjaro.org/repos/
+   [1;32m0.409[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... France         : https://fr.mirror.babylon.network/manjaro/
+   [1;32m0.602[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://mirror.ragenetwork.de/manjaro/
+   [1;32m0.464[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://ftp.halifax.rwth-aachen.de/manjaro/
+   [1;32m0.957[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.tu-chemnitz.de/pub/linux/manjaro/
+   [1;32m0.166[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netzspielplatz.de/manjaro/packages/
+   [1;32m0.438[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netcologne.de/manjaro/
+   [1;32m0.257[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.rhindon.net/manjaro/
+   [1;32m0.487[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.stdout.net/manjaro/
+   [1;32m0.441[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : https://manjaro-mirror-a.alpix.eu/
+   [1;32m0.572[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/
+   [1;32m0.224[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Greece         : http://ftp.cc.uoc.gr/mirrors/linux/manjaro/
+   [1;32m0.263[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Hungary        : http://mirror.infotronik.hu/mirrors/pub/manjaro/
+   [1;32m0.218[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kambing.ui.ac.id/manjaro/
+   [1;32m1.806[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kartolo.sby.datautama.net.id/manjaro/
+   [1;32m1.703[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Indonesia      : http://jaran.undip.ac.id/manjaro/
+   [1;32m1.625[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Ireland        : https://ftp.heanet.ie/mirrors/manjaro/
+   [1;32m0.282[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://manjaro.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.207[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://ba.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.123[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Italy          : http://ct.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.173[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/
+   [1;32m1.260[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.riken.jp/Linux/manjaro/
+   [1;32m1.333[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : https://ftp.nluug.nl/pub/os/Linux/distr/manjaro/
+   [1;32m0.206[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.snt.utwente.nl/pub/linux/manjaro/
+   [1;32m0.098[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Netherlands    : https://nl.mirror.babylon.network/manjaro/
+   [1;32m0.269[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Philippines    : http://mirror.rise.ph/manjaro/
+   [1;32m0.766[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Poland         : http://mirror.chmuri.net/manjaro/
+   [1;32m0.470[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Portugal       : http://ftp.dei.uc.pt/pub/linux/manjaro/
+   [1;32m0.807[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Portugal       : http://manjaro.barata.pt/
+   [1;32m0.472[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Romania        : http://mirrors.serverhost.ro/manjaro/packages/
+   [1;32m0.684[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Romania        : http://ftp.lug.ro/manjaro/
+   [1;32m0.359[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Russia         : https://mirror.yandex.ru/mirrors/manjaro/
+   [1;32m0.238[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Singapore      : http://download.nus.edu.sg/mirror/manjaro/
+   [1;32m1.347[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... South_Africa   : http://mirror.is.co.za/mirrors/manjaro.org/
+   [1;32m0.470[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Sweden         : https://ftp.lysator.liu.se/pub/manjaro/
+   [1;32m0.152[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Spain          : http://ftp.caliu.cat/manjaro/
+   [1;32m0.430[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Sweden         : http://mirror.zetup.net/manjaro/
+   [1;32m0.066[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Taiwan         : http://free.nchc.org.tw/manjaro/
+   [1;32m1.249[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Turkey         : http://ftp.linux.org.tr/manjaro/
+   [1;32m1.124[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://repo.manjaro.org.uk/
+   [1;32m0.545[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : https://www.mirrorservice.org/sites/repo.manjaro.org/r
+   [1;32m0.187[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://mirror.catn.com/pub/manjaro/
+   [1;32m0.357[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://manjaro.mirrors.uk2.net/
+   [1;32m0.333[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.dacentec.com/manjaro/
+   [1;32m0.283[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.jmu.edu/manjaro/
+   [1;32m0.452[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.solarvps.com/manjaro/
+   [1;32m0.702[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.nexcess.net/manjaro/
+   [1;32m0.517[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://distro.ibiblio.org/manjaro/
+   [1;32m1.214[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.clarkson.edu/manjaro/
+   [1;32m0.556[1;m 
+[2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... United_States  : http://mirrors.ocf.berkeley.edu/manjaro/
+   [1;32m1.171[1;m 
 [2017-04-25 22:36] [ALPM-SCRIPTLET]    ..... Vietnam        : https://mirror.freedif.org/Manjaro/
 [2017-04-25 22:36] [ALPM-SCRIPTLET] .: [1;31mError[1;m timed out 'https://mirror.freedif.org/Manjaro/'
 [2017-04-25 22:36] [ALPM-SCRIPTLET] 
@@ -1014,135 +1091,244 @@
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Downloading mirrors from repo.manjaro.org
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Using default mirror file
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Querying mirrors - This may take some time
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://mirror.ventraip.net.au/Manjaro/   [1;32m0.913[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.uberglobalmirror.com/   [1;32m1.088[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.mirror.serversaustralia.com.au/   [1;32m0.792[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Austria        : http://mirror.inode.at/manjaro/   [1;32m0.206[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belarus        : http://mirror.datacenter.by/pub/mirrors/manjaro/   [1;32m0.224[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belgium        : http://ftp.belnet.be/manjaro/   [1;32m0.194[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://mirror.ventraip.net.au/Manjaro/
+   [1;32m0.913[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.uberglobalmirror.com/
+   [1;32m1.088[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Australia      : http://manjaro.mirror.serversaustralia.com.au/
+   [1;32m0.792[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Austria        : http://mirror.inode.at/manjaro/
+   [1;32m0.206[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belarus        : http://mirror.datacenter.by/pub/mirrors/manjaro/
+   [1;32m0.224[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belgium        : http://ftp.belnet.be/manjaro/
+   [1;32m0.194[1;m 
 [2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belgium        : ftp://ftp.belnet.be/manjaro/
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;31mError[1;m ftp error: error_perm('550 manjaro: No such file or directory',) 'ftp://ftp.belnet.be/manjaro/'
 [2017-05-14 23:37] [ALPM-SCRIPTLET] 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belgium        : https://manjaro.cu.be/   [1;32m0.244[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Brasil         : http://linorg.usp.br/manjaro/   [1;32m1.732[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://mirrors.netix.net/manjaro/   [1;32m0.329[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://mirrors.netix.net/manjaro/   [1;32m0.155[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://manjaro.ipacct.com/manjaro/   [1;32m0.346[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.ipacct.com/manjaro/   [1;32m0.166[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.telecoms.bg/   [1;32m1.043[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Belgium        : https://manjaro.cu.be/
+   [1;32m0.244[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Brasil         : http://linorg.usp.br/manjaro/
+   [1;32m1.732[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://mirrors.netix.net/manjaro/
+   [1;32m0.329[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://mirrors.netix.net/manjaro/
+   [1;32m0.155[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : https://manjaro.ipacct.com/manjaro/
+   [1;32m0.346[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.ipacct.com/manjaro/
+   [1;32m0.166[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Bulgaria       : http://manjaro.telecoms.bg/
+   [1;32m1.043[1;m 
 [2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Canada         : http://manjaro.cybr.ca/
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;31mError[1;m timed out 'http://manjaro.cybr.ca/'
 [2017-05-14 23:37] [ALPM-SCRIPTLET] 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Canada         : https://ca.mirror.babylon.network/manjaro/   [1;32m0.597[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Chile          : http://manjaro.dcc.uchile.cl/   [1;32m1.151[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Canada         : https://ca.mirror.babylon.network/manjaro/
+   [1;32m0.597[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Chile          : http://manjaro.dcc.uchile.cl/
+   [1;32m1.151[1;m 
 [2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... Chile          : http://doge.ing.puc.cl/Mirrors/Manjaro/
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : https://mirrors.ustc.edu.cn/manjaro/   [1;32m2.311[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.ustc.edu.cn/manjaro/   [1;32m0.808[1;m 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://ftp.cuhk.edu.hk/pub/Linux/manjaro/   [1;32m1.086[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : https://mirrors.ustc.edu.cn/manjaro/
+   [1;32m2.311[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.ustc.edu.cn/manjaro/
+   [1;32m0.808[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://ftp.cuhk.edu.hk/pub/Linux/manjaro/
+   [1;32m1.086[1;m 
 [2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : ftp://ftp.cuhk.edu.hk/pub/Linux/manjaro/
 [2017-05-14 23:37] [ALPM-SCRIPTLET] .: [1;31mError[1;m ftp error: timeout('timed out',) 'ftp://ftp.cuhk.edu.hk/pub/Linux/manjaro/'
 [2017-05-14 23:37] [ALPM-SCRIPTLET] 
-[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.tuna.tsinghua.edu.cn/manjaro/   [1;32m1.710[1;m 
+[2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.tuna.tsinghua.edu.cn/manjaro/
+   [1;32m1.710[1;m 
 [2017-05-14 23:37] [ALPM-SCRIPTLET]    ..... China          : https://mirrors.zju.edu.cn/manjaro/
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.zju.edu.cn/manjaro/   [1;32m-7199.218[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Colombia       : http://mirror.edatel.net.co/manjaro/   [1;32m0.779[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Costa_Rica     : https://mirrors.ucr.ac.cr/manjaro/   [1;32m1.592[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Costa_Rica     : http://mirrors.ucr.ac.cr/manjaro/   [1;32m0.365[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Czech          : https://mirror.dkm.cz/manjaro/   [1;32m0.307[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Czech          : http://mirror.dkm.cz/manjaro/   [1;32m0.214[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : https://mirrors.dotsrc.org/manjaro/   [1;32m0.184[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : http://mirrors.dotsrc.org/manjaro/   [1;32m0.099[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : https://www.uex.dk/repos/manjaro/   [1;32m0.275[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : http://www.uex.dk/repos/manjaro/   [1;32m0.391[1;m 
-[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.cedia.org.ec/manjaro/   [1;32m0.967[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.cedia.org.ec/manjaro/   [1;32m0.477[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.uta.edu.ec/manjaro/   [1;32m1.324[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.uta.edu.ec/manjaro/   [1;32m0.465[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.espoch.edu.ec/manjaro/   [1;32m1.304[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.espoch.edu.ec/manjaro/   [1;32m0.447[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://manjarolinux.polymorf.fr/   [1;32m0.104[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://mirror.lignux.com/manjaro/   [1;32m0.250[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://ftp.free.org/mirrors/repo.manjaro.org/repos/   [1;32m0.352[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : ftp://ftp.free.org/mirrors/repo.manjaro.org/repos/   [1;32m0.504[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : https://fr.mirror.babylon.network/manjaro/   [1;32m1.100[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://mirror.ragenetwork.de/manjaro/   [1;32m0.492[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://ftp.halifax.rwth-aachen.de/manjaro/   [1;32m0.222[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.halifax.rwth-aachen.de/manjaro/   [1;32m0.102[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.halifax.rwth-aachen.de/manjaro/   [1;32m0.694[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.tu-chemnitz.de/pub/linux/manjaro/   [1;32m0.279[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.tu-chemnitz.de/pub/linux/manjaro/   [1;32m0.482[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netzspielplatz.de/manjaro/packages/   [1;32m0.336[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netcologne.de/manjaro/   [1;32m0.250[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.rhindon.net/manjaro/   [1;32m0.347[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.stdout.net/manjaro/   [1;32m0.349[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://repo.stdout.net/manjaro/   [1;32m0.105[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://manjaro-mirror-a.alpix.eu/   [1;32m0.580[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://manjaro-mirror-a.alpix.eu/   [1;32m0.252[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/   [1;32m0.286[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/   [1;32m0.585[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Greece         : http://ftp.cc.uoc.gr/mirrors/linux/manjaro/   [1;32m0.288[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Greece         : ftp://ftp.cc.uoc.gr/mirrors/linux/manjaro/   [1;32m1.296[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Hungary        : http://mirror.infotronik.hu/mirrors/pub/manjaro/   [1;32m0.273[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kambing.ui.ac.id/manjaro/   [1;32m1.845[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kartolo.sby.datautama.net.id/manjaro/   [1;32m1.880[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... China          : http://mirrors.zju.edu.cn/manjaro/
+   [1;32m-7199.218[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Colombia       : http://mirror.edatel.net.co/manjaro/
+   [1;32m0.779[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Costa_Rica     : https://mirrors.ucr.ac.cr/manjaro/
+   [1;32m1.592[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Costa_Rica     : http://mirrors.ucr.ac.cr/manjaro/
+   [1;32m0.365[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Czech          : https://mirror.dkm.cz/manjaro/
+   [1;32m0.307[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Czech          : http://mirror.dkm.cz/manjaro/
+   [1;32m0.214[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : https://mirrors.dotsrc.org/manjaro/
+   [1;32m0.184[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : http://mirrors.dotsrc.org/manjaro/
+   [1;32m0.099[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : https://www.uex.dk/repos/manjaro/
+   [1;32m0.275[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Denmark        : http://www.uex.dk/repos/manjaro/
+   [1;32m0.391[1;m 
+[2017-05-14 21:37] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.cedia.org.ec/manjaro/
+   [1;32m0.967[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.cedia.org.ec/manjaro/
+   [1;32m0.477[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.uta.edu.ec/manjaro/
+   [1;32m1.324[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.uta.edu.ec/manjaro/
+   [1;32m0.465[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : https://mirror.espoch.edu.ec/manjaro/
+   [1;32m1.304[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ecuador        : http://mirror.espoch.edu.ec/manjaro/
+   [1;32m0.447[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://manjarolinux.polymorf.fr/
+   [1;32m0.104[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://mirror.lignux.com/manjaro/
+   [1;32m0.250[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : http://ftp.free.org/mirrors/repo.manjaro.org/repos/
+   [1;32m0.352[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : ftp://ftp.free.org/mirrors/repo.manjaro.org/repos/
+   [1;32m0.504[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... France         : https://fr.mirror.babylon.network/manjaro/
+   [1;32m1.100[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://mirror.ragenetwork.de/manjaro/
+   [1;32m0.492[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://ftp.halifax.rwth-aachen.de/manjaro/
+   [1;32m0.222[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.halifax.rwth-aachen.de/manjaro/
+   [1;32m0.102[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.halifax.rwth-aachen.de/manjaro/
+   [1;32m0.694[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.tu-chemnitz.de/pub/linux/manjaro/
+   [1;32m0.279[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.tu-chemnitz.de/pub/linux/manjaro/
+   [1;32m0.482[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netzspielplatz.de/manjaro/packages/
+   [1;32m0.336[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://mirror.netcologne.de/manjaro/
+   [1;32m0.250[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.rhindon.net/manjaro/
+   [1;32m0.347[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://repo.stdout.net/manjaro/
+   [1;32m0.349[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://repo.stdout.net/manjaro/
+   [1;32m0.105[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : https://manjaro-mirror-a.alpix.eu/
+   [1;32m0.580[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://manjaro-mirror-a.alpix.eu/
+   [1;32m0.252[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : http://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/
+   [1;32m0.286[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Germany        : ftp://ftp.rz.tu-bs.de/pub/mirror/manjaro.org/repos/
+   [1;32m0.585[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Greece         : http://ftp.cc.uoc.gr/mirrors/linux/manjaro/
+   [1;32m0.288[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Greece         : ftp://ftp.cc.uoc.gr/mirrors/linux/manjaro/
+   [1;32m1.296[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Hungary        : http://mirror.infotronik.hu/mirrors/pub/manjaro/
+   [1;32m0.273[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kambing.ui.ac.id/manjaro/
+   [1;32m1.845[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Indonesia      : http://kartolo.sby.datautama.net.id/manjaro/
+   [1;32m1.880[1;m 
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Indonesia      : http://jaran.undip.ac.id/manjaro/
 [2017-05-14 21:38] [ALPM-SCRIPTLET] .: [1;31mError[1;m timed out 'http://jaran.undip.ac.id/manjaro/'
 [2017-05-14 21:38] [ALPM-SCRIPTLET] 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ireland        : https://ftp.heanet.ie/mirrors/manjaro/   [1;32m0.834[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ireland        : https://ftp.heanet.ie/mirrors/manjaro/
+   [1;32m0.834[1;m 
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Ireland        : ftp://ftp.heanet.ie/mirrors/manjaro/
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://manjaro.mirror.garr.it/mirrors/manjaro/   [1;32m0.453[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://manjaro.mirror.garr.it/mirrors/manjaro/   [1;32m0.154[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://ba.mirror.garr.it/mirrors/manjaro/   [1;32m0.278[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://ba.mirror.garr.it/mirrors/manjaro/   [1;32m0.157[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://ct.mirror.garr.it/mirrors/manjaro/   [1;32m0.368[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://ct.mirror.garr.it/mirrors/manjaro/   [1;32m0.235[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/   [1;32m0.647[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://manjaro.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.453[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://manjaro.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.154[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://ba.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.278[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://ba.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.157[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : https://ct.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.368[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Italy          : http://ct.mirror.garr.it/mirrors/manjaro/
+   [1;32m0.235[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/
+   [1;32m0.647[1;m 
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Japan          : ftp://ftp.tsukuba.wide.ad.jp/Linux/manjaro/
 [2017-05-14 21:38] [ALPM-SCRIPTLET] .: [1;31mError[1;m ftp error: OSError(113, 'No route to host') 'ftp://ftp.tsukuba.wide.ad.jp/Linux/manjaro/'
 [2017-05-14 21:38] [ALPM-SCRIPTLET] 
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Japan          : http://ftp.riken.jp/Linux/manjaro/
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Japan          : ftp://ftp.riken.jp/Linux/manjaro/
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : https://ftp.nluug.nl/pub/os/Linux/distr/manjaro/   [1;32m0.243[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.nluug.nl/pub/os/Linux/distr/manjaro/   [1;32m0.105[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : ftp://ftp.nluug.nl/pub/os/Linux/distr/manjaro/   [1;32m0.444[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.snt.utwente.nl/pub/linux/manjaro/   [1;32m0.161[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : ftp://ftp.snt.utwente.nl/pub/linux/manjaro/   [1;32m0.526[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : https://nl.mirror.babylon.network/manjaro/   [1;32m1.978[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Philippines    : http://mirror.rise.ph/manjaro/   [1;32m0.732[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Poland         : http://mirror.chmuri.net/manjaro/   [1;32m0.245[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : http://ftp.dei.uc.pt/pub/linux/manjaro/   [1;32m1.502[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : ftp://ftp.dei.uc.pt/pub/linux/manjaro/   [1;32m0.884[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : http://manjaro.barata.pt/   [1;32m0.863[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : http://mirrors.serverhost.ro/manjaro/packages/   [1;32m0.636[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : http://ftp.lug.ro/manjaro/   [1;32m0.556[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : ftp://ftp.lug.ro/manjaro/   [1;32m0.659[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Russia         : https://mirror.yandex.ru/mirrors/manjaro/   [1;32m0.267[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Russia         : http://mirror.yandex.ru/mirrors/manjaro/   [1;32m0.111[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Singapore      : https://download.nus.edu.sg/mirror/manjaro/   [1;32m1.915[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Singapore      : http://download.nus.edu.sg/mirror/manjaro/   [1;32m0.722[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... South_Africa   : http://mirror.is.co.za/mirrors/manjaro.org/   [1;32m0.498[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : https://ftp.lysator.liu.se/pub/manjaro/   [1;32m0.263[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : ftp://ftp.lysator.liu.se/pub/manjaro/   [1;32m0.460[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Spain          : http://ftp.caliu.cat/manjaro/   [1;32m0.431[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : https://mirror.zetup.net/manjaro/   [1;32m0.220[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : http://mirror.zetup.net/manjaro/   [1;32m0.091[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Taiwan         : http://free.nchc.org.tw/manjaro/   [1;32m1.743[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Turkey         : http://ftp.linux.org.tr/manjaro/   [1;32m0.316[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Turkey         : ftp://ftp.linux.org.tr/manjaro/   [1;32m0.748[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://repo.manjaro.org.uk/   [1;32m0.116[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : https://www.mirrorservice.org/sites/repo.manjaro.org/r   [1;32m0.236[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://mirror.catn.com/pub/manjaro/   [1;32m0.193[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://manjaro.mirrors.uk2.net/   [1;32m0.305[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.dacentec.com/manjaro/   [1;32m0.402[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.jmu.edu/manjaro/   [1;32m0.432[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.solarvps.com/manjaro/   [1;32m0.349[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.nexcess.net/manjaro/   [1;32m0.775[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://distro.ibiblio.org/manjaro/   [1;32m0.509[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : https://mirror.clarkson.edu/manjaro/   [1;32m0.731[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.clarkson.edu/manjaro/   [1;32m0.305[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : https://mirrors.ocf.berkeley.edu/manjaro/   [1;32m1.761[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirrors.ocf.berkeley.edu/manjaro/   [1;32m0.413[1;m 
-[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Vietnam        : https://mirror.freedif.org/Manjaro/   [1;32m1.259[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : https://ftp.nluug.nl/pub/os/Linux/distr/manjaro/
+   [1;32m0.243[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.nluug.nl/pub/os/Linux/distr/manjaro/
+   [1;32m0.105[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : ftp://ftp.nluug.nl/pub/os/Linux/distr/manjaro/
+   [1;32m0.444[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : http://ftp.snt.utwente.nl/pub/linux/manjaro/
+   [1;32m0.161[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : ftp://ftp.snt.utwente.nl/pub/linux/manjaro/
+   [1;32m0.526[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Netherlands    : https://nl.mirror.babylon.network/manjaro/
+   [1;32m1.978[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Philippines    : http://mirror.rise.ph/manjaro/
+   [1;32m0.732[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Poland         : http://mirror.chmuri.net/manjaro/
+   [1;32m0.245[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : http://ftp.dei.uc.pt/pub/linux/manjaro/
+   [1;32m1.502[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : ftp://ftp.dei.uc.pt/pub/linux/manjaro/
+   [1;32m0.884[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Portugal       : http://manjaro.barata.pt/
+   [1;32m0.863[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : http://mirrors.serverhost.ro/manjaro/packages/
+   [1;32m0.636[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : http://ftp.lug.ro/manjaro/
+   [1;32m0.556[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Romania        : ftp://ftp.lug.ro/manjaro/
+   [1;32m0.659[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Russia         : https://mirror.yandex.ru/mirrors/manjaro/
+   [1;32m0.267[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Russia         : http://mirror.yandex.ru/mirrors/manjaro/
+   [1;32m0.111[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Singapore      : https://download.nus.edu.sg/mirror/manjaro/
+   [1;32m1.915[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Singapore      : http://download.nus.edu.sg/mirror/manjaro/
+   [1;32m0.722[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... South_Africa   : http://mirror.is.co.za/mirrors/manjaro.org/
+   [1;32m0.498[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : https://ftp.lysator.liu.se/pub/manjaro/
+   [1;32m0.263[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : ftp://ftp.lysator.liu.se/pub/manjaro/
+   [1;32m0.460[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Spain          : http://ftp.caliu.cat/manjaro/
+   [1;32m0.431[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : https://mirror.zetup.net/manjaro/
+   [1;32m0.220[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Sweden         : http://mirror.zetup.net/manjaro/
+   [1;32m0.091[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Taiwan         : http://free.nchc.org.tw/manjaro/
+   [1;32m1.743[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Turkey         : http://ftp.linux.org.tr/manjaro/
+   [1;32m0.316[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Turkey         : ftp://ftp.linux.org.tr/manjaro/
+   [1;32m0.748[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://repo.manjaro.org.uk/
+   [1;32m0.116[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : https://www.mirrorservice.org/sites/repo.manjaro.org/r
+   [1;32m0.236[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://mirror.catn.com/pub/manjaro/
+   [1;32m0.193[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_Kingdom : http://manjaro.mirrors.uk2.net/
+   [1;32m0.305[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.dacentec.com/manjaro/
+   [1;32m0.402[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.jmu.edu/manjaro/
+   [1;32m0.432[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.solarvps.com/manjaro/
+   [1;32m0.349[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.nexcess.net/manjaro/
+   [1;32m0.775[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://distro.ibiblio.org/manjaro/
+   [1;32m0.509[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : https://mirror.clarkson.edu/manjaro/
+   [1;32m0.731[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirror.clarkson.edu/manjaro/
+   [1;32m0.305[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : https://mirrors.ocf.berkeley.edu/manjaro/
+   [1;32m1.761[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... United_States  : http://mirrors.ocf.berkeley.edu/manjaro/
+   [1;32m0.413[1;m 
+[2017-05-14 21:38] [ALPM-SCRIPTLET]    ..... Vietnam        : https://mirror.freedif.org/Manjaro/
+   [1;32m1.259[1;m 
 [2017-05-14 21:38] [ALPM-SCRIPTLET] .: [1;37mInfo[1;m Writing mirror list
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    China           : https://mirrors.zju.edu.cn/manjaro/stable
 [2017-05-14 21:38] [ALPM-SCRIPTLET]    Sweden          : https://mirror.zetup.net/manjaro/stable
@@ -18349,3 +18535,4 @@ filesystem: 750  package: 755
 [2018-08-27 20:49] [ALPM] transaction completed
 [2018-08-27 20:49] [ALPM] running 'systemd-update.hook'...
 [2018-08-27 20:49] [ALPM] running 'update-desktop-database.hook'...
+CHANGED  

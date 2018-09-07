@@ -107,8 +107,9 @@ void ly::ProgramManager::run()
     SystemLog::get()->addSuccess("OK!");
     SystemLog::get()->addError("OH NO!");
 
-    LogForm testLog {"Testlog###test_id2"};
-    testLog.loadFile("../test_logs/test.log");
+    m_logManager.add("../test_logs/test.log");
+    //LogForm testLog {"Testlog###test_id2"};
+    //testLog.loadFile("../test_logs/test.log");
     while (!glfwWindowShouldClose(m_currentWindow->get()) && !m_quit)
     {
 
@@ -132,7 +133,7 @@ void ly::ProgramManager::run()
 
             // 1. Show a simple window.
             // Tip: if we don't call ImGui::Begin()/ImGui::End() the widgets automatically appears in a window called "Debug".
-            /*{
+            {
                 static float f = 0.0f;
                 static int counter = 0;
                 ImGui::Text(
@@ -155,7 +156,7 @@ void ly::ProgramManager::run()
 
                 ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate,
                             ImGui::GetIO().Framerate);
-            }*/
+            }
 
             // 2. Show another simple window. In most cases you will use an explicit Begin/End pair to name your windows.
             /*if (show_another_window)
@@ -175,7 +176,7 @@ void ly::ProgramManager::run()
                 ImGui::ShowDemoWindow(&show_demo_window);
             }
 
-            testLog.process();
+            m_logManager.process();
             SystemLog::get()->process();
             // Rendering
             ImGui::Render();

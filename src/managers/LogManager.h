@@ -6,12 +6,17 @@
 #define LOGGERY_LOGMANAGER_H
 
 #include "../forms/LogForm.h"
+
 namespace ly
 {
     class LogManager
     {
         public:
             LogManager() = default;
+
+            void add(const fs::path &path);
+
+            void process();
 
         private:
             std::vector<ly::LogForm> m_logs;

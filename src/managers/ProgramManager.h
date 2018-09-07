@@ -18,8 +18,9 @@
 #include "../classes/Image.h"
 #include "../classes/Timer.h"
 #include "../../content/files_mapper.h"
-#include "../forms/LogForm.h"
+#include "../managers/LogManager.h"
 #include "../forms/SystemLog.h"
+
 
 namespace ly
 {
@@ -45,6 +46,7 @@ namespace ly
             bool m_quit = false;
             ly::Window m_window; //The default window
             ly::Window *m_currentWindow;
+            ly::LogManager m_logManager;
     };
 }
 

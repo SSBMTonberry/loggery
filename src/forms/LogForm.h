@@ -11,7 +11,9 @@
 #include <fstream>
 #include "../gui/Textbox.h"
 #include "../gui/Text.h"
+#include "../classes/Timer.h"
 #include "fmt/format.h"
+#include "fmt/time.h"
 #include "SystemLog.h"
 
 #if MSVC
@@ -44,11 +46,12 @@ namespace ly
     {
         public:
             LogForm();
-            LogForm(const std::string &id, const ImVec2 &sizeOnFirstUse = {640, 480});
+            LogForm(const fs::path &path, const ImVec2 &sizeOnFirstUse = {640, 480});
 
             bool process();
             bool loadFile(const fs::path &path);
             std::vector<ly::Text> getFilteredTexts(const std::string_view &filter);
+            std::string generateId(const fs::path &path);
 
             void setVisible(bool isVisisble);
             void setSizeOnFirstUse(const ImVec2 &sizeOnFirstUse);
@@ -57,6 +60,11 @@ namespace ly
             const ImVec2 &getSizeOnFirstUse() const;
 
         private:
+            void showProperties();
+            void processProperties();
+
+            fs::path m_path;
+            fs::file_time_type m_lastUpdate;
             std::string m_id;
             ImVec2 m_sizeOnFirstUse;
             bool m_isVisible = true;
@@ -64,7 +72,14 @@ namespace ly
             std::vector<ly::Text> m_filteredTexts;
             std::vector<ly::Text> m_texts;
 
-            SystemLog *m_log;
+            /*!
+             * first: If you want to limit the lines or not
+             * second: How many lines you want to show at a time if limit is on
+             */
+            std::pair<bool, int> m_limitLines {false, 1000};
+
+            bool m_alwaysSetScrollMax = true;
+            bool m_autoUpdate = true;
     };
 }
 

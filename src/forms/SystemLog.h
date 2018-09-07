@@ -37,7 +37,7 @@ namespace ly
             const std::string ID = "System log###666";
 
             const ImVec4 SuccessColor {0, 182, 0, 255};
-            const ImVec4 InfoColor {146, 182, 255, 255};
+            const ImVec4 InfoColor {146, 182, 254, 255};
             const ImVec4 WarningColor {255, 219, 0, 255};
             const ImVec4 ErrorColor {240, 0, 0, 255};
 
