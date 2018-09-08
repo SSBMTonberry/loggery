@@ -10,6 +10,8 @@ static void glfw_error_callback(int error, const char* description)
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
 }
 
+
+
 ly::ProgramManager::~ProgramManager()
 {
     ImGui_ImplOpenGL3_Shutdown();
@@ -26,7 +28,6 @@ int ly::ProgramManager::initialize(const ly::Vector2i &size, const std::string &
 
     setCurrentWindow(&m_window);
     setSwapInterval(0);
-
     initializeGLAD();
     initializeImGui();
 
@@ -110,6 +111,7 @@ void ly::ProgramManager::run()
     m_logManager.add("../test_logs/test.log");
     //LogForm testLog {"Testlog###test_id2"};
     //testLog.loadFile("../test_logs/test.log");
+    m_currentWindow->registerDragDropFileCallback(std::bind(&ProgramManager::onFileDragDrop, this, std::placeholders::_1));
     while (!glfwWindowShouldClose(m_currentWindow->get()) && !m_quit)
     {
 
@@ -182,6 +184,7 @@ void ly::ProgramManager::run()
             ImGui::Render();
             int display_w, display_h;
             //glfwMakeContextCurrent(window);
+            m_currentWindow->processCallbacks();
             glfwGetFramebufferSize(m_currentWindow->get(), &display_w, &display_h);
             glViewport(0, 0, display_w, display_h);
             glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
@@ -203,4 +206,12 @@ int ly::ProgramManager::initializeGLAD()
 
     printf("OpenGL %d.%d\n", GLVersion.major, GLVersion.minor);
     return 0;
+}
+
+void ly::ProgramManager::onFileDragDrop(const std::vector<fs::path> &files)
+{
+    for(auto &item : files)
+    {
+        m_logManager.add(item);
+    }
 }

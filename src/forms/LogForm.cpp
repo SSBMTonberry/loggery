@@ -24,13 +24,14 @@ bool ly::LogForm::process()
         {
             m_filteredTexts = getFilteredTexts(m_filter.getValue().data());
         }
+        ImGui::SameLine();
+        if(ImGui::SmallButton((m_showProperties) ? "Hide properties" : "Show properties"))
+            m_showProperties = !m_showProperties;
 
-        showProperties();
+        if(m_showProperties)
+            showProperties();
 
-        //if(ImGui::SmallButton("Clear log"))
-        //{
-        //    //clear();
-        //}
+
         //ImGui::EndChild();
 
         ImGui::BeginChild("debug_child_2", {-1, -1}, false, 0);
@@ -119,7 +120,7 @@ bool ly::LogForm::loadFile(const fs::path &path)
             m_texts.emplace_back(fmt::format("[{0}] {1}", lineno, line));
             ++lineno;
         }
-        SystemLog::get()->addSuccess(fmt::format("File \"{0}\" ({1} lines) successfully loaded in {2} seconds", path.string(), lineno, timer.getTotalDuration().count()));
+        SystemLog::get()->addSuccess(fmt::format("File \"{0}\" ({1} lines) successfully loaded in {2} seconds", path.string(), lineno-1, timer.getTotalDuration().count()));
         return true;
     }
     else

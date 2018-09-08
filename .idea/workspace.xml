@@ -38,12 +38,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a58bd91-2dba-4abd-9cb2-50d444c26e1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/MenuBar.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/MenuBar.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/MenuItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/MenuItem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Color.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Color.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Window.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Window.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms/LogForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LogForm.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms/LogForm.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LogForm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/SystemLog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/SystemLog.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms/SystemLog.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/SystemLog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managers/LogManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/LogManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managers/LogManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/LogManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managers/ProgramManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/ProgramManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managers/ProgramManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/managers/ProgramManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/test_logs/test.log" afterDir="false" />
@@ -76,10 +82,10 @@
           <entry key="Build All (disassembly)" value="6" />
           <entry key="LICENSE" value="1" />
           <entry key="c" value="3" />
-          <entry key="cpp" value="43" />
+          <entry key="cpp" value="47" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="46" />
-          <entry key="hpp" value="5" />
+          <entry key="h" value="51" />
+          <entry key="hpp" value="6" />
           <entry key="loggery (disassembly)" value="4" />
           <entry key="txt" value="8" />
         </counts>
@@ -88,15 +94,15 @@
         <counts>
           <entry key="CMakeLists.txt" value="7" />
           <entry key="Disassembly" value="10" />
-          <entry key="ObjectiveC" value="97" />
+          <entry key="ObjectiveC" value="107" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="7287" />
-          <entry key="h" value="3774" />
-          <entry key="hpp" value="295" />
+          <entry key="cpp" value="8237" />
+          <entry key="h" value="4494" />
+          <entry key="hpp" value="297" />
           <entry key="md" value="95" />
           <entry key="mm" value="23" />
           <entry key="txt" value="469" />
@@ -107,7 +113,7 @@
           <entry key="CMakeLists.txt" value="469" />
           <entry key="Doxygen file" value="19" />
           <entry key="Markdown" value="95" />
-          <entry key="ObjectiveC" value="11360" />
+          <entry key="ObjectiveC" value="13032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
@@ -224,8 +230,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="376">
+              <caret line="119" column="67" selection-start-line="119" selection-start-column="67" selection-end-line="119" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Window.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+              <folding>
+                <element signature="e#91#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Window.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1159">
+              <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -233,80 +260,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/forms/LogForm.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Text.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-              <folding>
-                <element signature="e#97#114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/Text.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#87#111#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/external_libs/include/imgui/imgui.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="242" column="28" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/managers/LogManager.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding>
-                <element signature="e#107#131#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="589">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -314,14 +269,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/forms/LogForm.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="541">
+              <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
               <folding>
                 <element signature="e#93#110#0" expanded="true" />
-                <element signature="e#265#322#0" expanded="true" />
-                <element signature="e#339#558#0" expanded="true" />
-                <element signature="e#575#659#0" expanded="true" />
-                <element signature="e#727#815#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="e#93#117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MenuItem.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/MenuItem.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="e#95#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="31" />
+              <folding>
+                <element signature="e#107#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -362,9 +367,7 @@
         <option value="$PROJECT_DIR$/external_libs/include/glad/glad.h" />
         <option value="$PROJECT_DIR$/LoggeryConfig.h.in" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/classes/Window.cpp" />
         <option value="$PROJECT_DIR$/src/classes/Image.h" />
-        <option value="$PROJECT_DIR$/src/classes/Window.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/src/classes/FpsTimer.cpp" />
         <option value="$PROJECT_DIR$/src/classes/FpsTimer.h" />
@@ -374,20 +377,26 @@
         <option value="$PROJECT_DIR$/external_libs/include/imgui/misc/stl/imgui_stl.cpp" />
         <option value="$PROJECT_DIR$/src/gui/Textbox.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/classes/Color.hpp" />
         <option value="$PROJECT_DIR$/tests/test_misc.cpp" />
         <option value="$PROJECT_DIR$/tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/gui/Text.h" />
         <option value="$PROJECT_DIR$/src/gui/Text.cpp" />
         <option value="$PROJECT_DIR$/src/classes/Timer.h" />
         <option value="$PROJECT_DIR$/src/managers/LogManager.h" />
-        <option value="$PROJECT_DIR$/src/managers/ProgramManager.h" />
         <option value="$PROJECT_DIR$/src/managers/LogManager.cpp" />
+        <option value="$PROJECT_DIR$/src/forms/SystemLog.cpp" />
+        <option value="$PROJECT_DIR$/src/classes/Color.hpp" />
+        <option value="$PROJECT_DIR$/src/forms/SystemLog.h" />
+        <option value="$PROJECT_DIR$/src/classes/Window.h" />
+        <option value="$PROJECT_DIR$/src/classes/Window.cpp" />
+        <option value="$PROJECT_DIR$/src/managers/ProgramManager.h" />
+        <option value="$PROJECT_DIR$/src/forms/LogForm.cpp" />
         <option value="$PROJECT_DIR$/src/managers/ProgramManager.cpp" />
         <option value="$PROJECT_DIR$/src/forms/LogForm.h" />
-        <option value="$PROJECT_DIR$/src/forms/SystemLog.cpp" />
-        <option value="$PROJECT_DIR$/src/forms/LogForm.cpp" />
-        <option value="$PROJECT_DIR$/src/forms/SystemLog.h" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.h" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.cpp" />
+        <option value="$PROJECT_DIR$/src/gui/MenuItem.cpp" />
+        <option value="$PROJECT_DIR$/src/gui/MenuItem.h" />
       </list>
     </option>
   </component>
@@ -567,7 +576,7 @@
       <workItem from="1534867290482" duration="4215000" />
       <workItem from="1534952221917" duration="256000" />
       <workItem from="1534952575658" duration="1738000" />
-      <workItem from="1535654794769" duration="28275000" />
+      <workItem from="1535654794769" duration="41198000" />
     </task>
     <servers />
   </component>
@@ -604,19 +613,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100179000" />
+    <option name="totallyTimeSpent" value="113102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1415" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14280032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14280032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299373" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299373" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39968652" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968652" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -625,7 +634,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991317" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.3299373" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.3299373" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -692,23 +701,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_dummy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/external_libs/include/imgui/imgui_internal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/external_libs/libs.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -803,6 +795,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#678#762#0" expanded="true" />
+            <element signature="e#2449#2468#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -897,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Color.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Timer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -931,16 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Window.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#91#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/external_libs/include/GLFW/glfw3.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -955,86 +934,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Window.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="e#107#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/managers/LogManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/external_libs/include/imgui/imgui.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="242" column="28" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/LogForm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-            <element signature="e#265#322#0" expanded="true" />
-            <element signature="e#339#558#0" expanded="true" />
-            <element signature="e#575#659#0" expanded="true" />
-            <element signature="e#727#815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/LogForm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="e#97#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Text.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1044,6 +947,129 @@
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
             <element signature="e#87#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Text.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external_libs/include/imgui/imgui.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Color.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding>
+            <element signature="e#97#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/SystemLog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#91#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#107#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/managers/ProgramManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="119" column="67" selection-start-line="119" selection-start-column="67" selection-end-line="119" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/LogForm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/LogForm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <element signature="e#93#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#93#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuItem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuItem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#95#119#0" expanded="true" />
           </folding>
         </state>
       </provider>

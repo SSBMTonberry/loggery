@@ -36,6 +36,8 @@ namespace ly
 
             void run();
 
+            void onFileDragDrop(const std::vector<fs::path> &files);
+
             void setCurrentWindow(ly::Window *window);
             void setSwapInterval(int swapInterval);
 

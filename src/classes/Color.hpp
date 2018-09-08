@@ -18,6 +18,8 @@ namespace ly
         int b;
         ///Alpha
         int a;
+
+
     };
 
     struct Colorf

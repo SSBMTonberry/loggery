@@ -77,8 +77,8 @@ namespace ly
              * second: How many lines you want to show at a time if limit is on
              */
             std::pair<bool, int> m_limitLines {false, 1000};
-
-            bool m_alwaysSetScrollMax = true;
+            bool m_showProperties = true;
+            bool m_alwaysSetScrollMax = false;
             bool m_autoUpdate = true;
     };
 }

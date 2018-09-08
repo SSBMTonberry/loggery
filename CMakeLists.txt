@@ -32,7 +32,7 @@ set(SOURCE_FILES main.cpp content/files.h content/files_mapper.h src/classes/Ima
         src/classes/Color.hpp src/classes/Window.cpp src/classes/Window.h src/managers/ProgramManager.cpp src/managers/ProgramManager.h
         src/gui/Textbox.cpp src/gui/Textbox.h external_libs/include/cute_png.h src/classes/Timer.cpp src/classes/Timer.h src/gui/Text.cpp
         src/gui/Text.h src/managers/LogManager.cpp src/managers/LogManager.h src/forms/LogForm.cpp src/forms/LogForm.h src/forms/SystemLog.cpp
-        src/forms/SystemLog.h)
+        src/forms/SystemLog.h src/gui/MenuBar.cpp src/gui/MenuBar.h src/gui/MenuItem.cpp src/gui/MenuItem.h)
 
 add_executable(loggery ${SOURCE_FILES} ${FMT_SOURCE_FILES} ${IMGUI_SOURCE_FILES} ${GLAD_SOURCE_FILES})
 
