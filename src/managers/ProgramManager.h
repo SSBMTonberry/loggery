@@ -20,10 +20,24 @@
 #include "../../content/files_mapper.h"
 #include "../managers/LogManager.h"
 #include "../forms/SystemLog.h"
+#include "../gui/MenuBar.h"
 
+#include <map>
 
 namespace ly
 {
+    enum class MenuAction : unsigned
+    {
+        None = 0,
+
+        //File
+        QuickOpenLog,
+        Quit,
+
+        //View
+        SystemLog
+    };
+
     class ProgramManager
     {
         public:
@@ -31,8 +45,13 @@ namespace ly
             ~ProgramManager();
 
             int initialize(const ly::Vector2i &size, const std::string &title);
+            void initializeMenubar();
             int initializeGLAD();
             void initializeImGui();
+
+            void onMenuItemClicked(MenuItem *menuItem);
+
+            void processMenuAction(const MenuAction &action);
 
             void run();
 
@@ -45,7 +64,11 @@ namespace ly
 
         private:
             int initializeGLFW();
+
+            std::map<std::string, MenuAction> m_menuActionMap;
+
             bool m_quit = false;
+            ly::MenuBar m_menuBar {true};
             ly::Window m_window; //The default window
             ly::Window *m_currentWindow;
             ly::LogManager m_logManager;

@@ -30,8 +30,27 @@ int ly::ProgramManager::initialize(const ly::Vector2i &size, const std::string &
     setSwapInterval(0);
     initializeGLAD();
     initializeImGui();
+    initializeMenubar();
 
     return result;
+}
+
+void ly::ProgramManager::initializeMenubar()
+{
+    auto file = m_menuBar.addMenuItem("File");
+    file->addMenuItem("Quick Open Log", "Alt+Q");
+    file->addMenuItem("Quit", "Alt+F4");
+    file->registerOnChosenCallback(std::bind(&ProgramManager::onMenuItemClicked, this, std::placeholders::_1));
+
+    auto view = m_menuBar.addMenuItem("View");
+    view->addMenuItem("System Log", "F1");
+    view->registerOnChosenCallback(std::bind(&ProgramManager::onMenuItemClicked, this, std::placeholders::_1));
+
+    //Map
+    m_menuActionMap["Quick Open Log"] = MenuAction::QuickOpenLog;
+    m_menuActionMap["Quit"] = MenuAction::Quit;
+
+    m_menuActionMap["System Log"] = MenuAction::SystemLog;
 }
 
 int ly::ProgramManager::initializeGLFW()
@@ -109,9 +128,8 @@ void ly::ProgramManager::run()
     SystemLog::get()->addError("OH NO!");
 
     m_logManager.add("../test_logs/test.log");
-    //LogForm testLog {"Testlog###test_id2"};
-    //testLog.loadFile("../test_logs/test.log");
     m_currentWindow->registerDragDropFileCallback(std::bind(&ProgramManager::onFileDragDrop, this, std::placeholders::_1));
+
     while (!glfwWindowShouldClose(m_currentWindow->get()) && !m_quit)
     {
 
@@ -180,6 +198,7 @@ void ly::ProgramManager::run()
 
             m_logManager.process();
             SystemLog::get()->process();
+            m_menuBar.process();
             // Rendering
             ImGui::Render();
             int display_w, display_h;
@@ -215,3 +234,20 @@ void ly::ProgramManager::onFileDragDrop(const std::vector<fs::path> &files)
         m_logManager.add(item);
     }
 }
+
+void ly::ProgramManager::onMenuItemClicked(ly::MenuItem *menuItem)
+{
+    processMenuAction((m_menuActionMap.count(menuItem->getId()) > 0) ? m_menuActionMap[menuItem->getId()] : MenuAction::None);
+}
+
+void ly::ProgramManager::processMenuAction(const ly::MenuAction &action)
+{
+    switch(action)
+    {
+        case MenuAction::Quit:
+            m_quit = true;
+            break;
+    }
+}
+
+

@@ -5,18 +5,63 @@
 #include "MenuItem.h"
 
 
-ly::MenuItem::MenuItem(const std::string &id) : m_id {id}
+ly::MenuItem::MenuItem(const std::string &id, const std::string &shortcut) : m_id {id}, m_shortcut {shortcut}
 {
 
 }
 
 bool ly::MenuItem::process()
 {
-    if(ImGui::MenuItem(m_id.c_str(), m_shortcut.c_str(), m_isSelected, m_isEnabled))
+    bool isPressed = false;
+    if(m_childMenuItems.empty())
     {
-
+        if (ImGui::MenuItem(m_id.c_str(), m_shortcut.c_str(), m_isSelected, m_isEnabled))
+        {
+            for(auto &callback : m_callbackOnChosen)
+                callback(this);
+            isPressed = true;
+        }
     }
-    return false;
+    else
+    {
+        if(ImGui::BeginMenu(m_id.c_str(), m_isEnabled))
+        {
+            for(auto &item : m_childMenuItems)
+            {
+                if(item.process())
+                {
+                    for(auto &callback : m_callbackOnChosen)
+                        callback(&item);
+                    isPressed = true;
+                }
+            }
+            ImGui::EndMenu();
+        }
+    }
+
+
+    return isPressed;
+}
+
+ly::MenuItem *ly::MenuItem::addMenuItem(const std::string &id, const std::string &shortcut)
+{
+    MenuItem &item = m_childMenuItems.emplace_back(id, shortcut);
+    return &item;
+}
+
+void ly::MenuItem::registerOnChosenCallback(const ly::MenuItem::func_menuitem &cb)
+{
+    m_callbackOnChosen.emplace_back(cb);
+}
+
+const std::string &ly::MenuItem::getId() const
+{
+    return m_id;
+}
+
+void ly::MenuItem::setId(const std::string &id)
+{
+    m_id = id;
 }
 
 bool ly::MenuItem::isSelected() const
@@ -48,4 +93,5 @@ void ly::MenuItem::setShortcut(const std::string &shortcut)
 {
     m_shortcut = shortcut;
 }
+
 

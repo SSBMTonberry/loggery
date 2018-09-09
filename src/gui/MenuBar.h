@@ -7,20 +7,24 @@
 
 #include "imgui/imgui.h"
 #include <string>
-
+#include "MenuItem.h"
 namespace ly
 {
     class MenuBar
     {
         public:
-            MenuBar(const std::string &id, bool isMainMenu);
+            MenuBar(bool isMainMenu);
 
             void process();
 
+            MenuItem * addMenuItem(const std::string &id, const std::string &shortcut = "");
+
         protected:
-            std::string m_id;
+            bool processMenuItems();
 
             bool m_isMainMenu = false;
+            ImVec2 m_menuSize = {0,0};
+            std::vector<MenuItem> m_menuItems;
     };
 }
 
